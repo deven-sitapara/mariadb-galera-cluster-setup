@@ -17,9 +17,9 @@ sudo mysql -uroot
 
 set password = password("WelComE.01!");
 
-GRANT ALL PRIVILEGES ON *.* TO 'cluster-user'@'%' IDENTIFIED BY 'clusterpass' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON \*.\* TO 'cluster-user'@'%' IDENTIFIED BY 'clusterpass' WITH GRANT OPTION;
 
-GRANT PROCESS ON *.* TO 'clustercheck'@'localhost' IDENTIFIED BY 'clusterpass';
+GRANT PROCESS ON \*.\* TO 'clustercheck'@'localhost' IDENTIFIED BY 'clusterpass';
 
 quit;
 
