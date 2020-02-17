@@ -59,7 +59,8 @@ wsrep_cluster_address="gcomm://172.16.1.173,172.17.1.173,172.18.1.173"
 
 # Galera Synchronization Configuration
 
-wsrep_sst_method=rsync
+#wsrep_sst_method=rsync
+wsrep_sst_method=mariabackup
 
 wsrep_sst_auth=cluster-user:clusterpass
 
